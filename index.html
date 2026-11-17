@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>БУРМАЛДА КОФЕ • Нишевая Specialty-кофейня на Дону</title>
+  
+  <meta name="description" content="Современный веб-сайт specialty-кофейни «БУРМАЛДА» (Ростов-на-Дону). 3D-карта лояльности с интеграцией Т-Банка, каждый 6-й кофе в подарок, сторис-новости и мини-игры за тикеты." />
+  <meta name="theme-color" content="#ffd6e6" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="БУРМАЛДА КОФЕ • Ростов-на-Дону" />
+  <meta property="og:description" content="Интерактивная 3D-карта лояльности, меню спешелти кофе и зона азарта." />
+  <meta property="og:image" content="assets/branding/logo_burmalda.png" />
+
+  <link rel="icon" type="image/png" href="assets/branding/logo_burmalda.png" />
+
+  <!-- Подключение модульных стилей -->
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <!-- ФИРМЕННЫЙ РОЗОВЫЙ ФОН И МАСКОТЫ-ЗАЙЧИКИ С КАРТЫ (СХОДСТВО 1 К 1) -->
+  <div class="matte-bg-layer" aria-hidden="true">
+    <div class="matte-radial-vignette"></div>
+    <div class="matte-micro-texture"></div>
+    <div class="bunny-bg-decor">
+      <img src="assets/branding/bunny_mascot.png" alt="" class="bunny-float bunny-1" width="177" height="205" loading="lazy" />
+      <img src="assets/branding/bunny_mascot.png" alt="" class="bunny-float bunny-2" width="177" height="205" loading="lazy" />
+      <img src="assets/branding/bunny_mascot.png" alt="" class="bunny-float bunny-3" width="177" height="205" loading="lazy" />
+      <img src="assets/branding/bunny_mascot.png" alt="" class="bunny-float bunny-4" width="177" height="205" loading="lazy" />
+      <img src="assets/branding/bunny_mascot.png" alt="" class="bunny-float bunny-5" width="177" height="205" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <!-- 1. ШАПКА САЙТА -->
+    <div id="header-mount"></div>
+
+    <main id="main-content">
+      <!-- 2. СТОРИС-НОВОСТИ (TELEGRAM / WHATSAPP STYLE) -->
+      <div id="stories-mount"></div>
+
+      <!-- 3. ГЛАВНЫЙ БАННЕР -->
+      <div id="hero-mount"></div>
+
+      <!-- 4. 3D-КАРТА ЛОЯЛЬНОСТИ И ПРОГРЕСС 6-Й ЧАШКИ -->
+      <div id="card3d-mount"></div>
+
+      <!-- 5. АДАПТИВНОЕ МЕНЮ С УМНЫМ ПРОДОЛЖЕНИЕМ ФОНА -->
+      <div id="menu-mount"></div>
+
+      <!-- 6. ВИТРИНА ЗОНЫ АЗАРТА (МИНИ-ИГРЫ) -->
+      <div id="games-teaser-mount"></div>
+
+      <!-- 7. ПРЕДЛОЖИТЬ ИДЕЮ (СКРЫТО ДЛЯ ГОСТЕЙ) -->
+      <div id="feedback-mount"></div>
+
+      <!-- 8. FAQ-АККОРДЕОН -->
+      <div id="faq-mount"></div>
+    </main>
+
+    <!-- 9. ФУТЕР И КОНТАКТЫ -->
+    <div id="footer-mount"></div>
+  </div>
+
+  <!-- МОДАЛЬНЫЕ ОКНА -->
+  <div id="profile-modal-mount"></div>
+  <div id="games-modal-mount"></div>
+  <div id="auth-modal-mount"></div>
+  <div id="drink-modal-mount"></div>
+
+  <!-- КОНТЕЙНЕР ДЛЯ ВСПЛЫВАЮЩИХ УВЕДОМЛЕНИЙ -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- ТОЧКА ВХОДА JS -->
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
